@@ -1,32 +1,19 @@
-
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <title>Rento</title>
-    <h1 class= "title">Rento</h1>
-  <body>
-    <div>
-    <h3 class= "title">Search For an Item</h3>
-
+<div class="d-flex align-items-center justify-content-center my-5">
+  <%= image_tag 'logo.png', class:'logo-homepage' %>
+</div>
+<div>
+  <h3 class= "title">Search For an Item</h3>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <%= simple_form_for :items, url: items_path, method: :get do |f| %>
+        <%= f.input :where, placeholder: 'location' %>
+        <%= f.input :what, placeholder: 'guitar' %>
+        <div class="d-flex align-items-center justify-content-center">
+          <%= f.submit 'Search', class:'button' %>
+        </div>
+      <% end %>
     </div>
-
-    <div>
-  <label for="field-location">Where</label>
-  <input type="location" id="location" name="location" placeholder="Location">
-
-  <label for="field-product">What</label>
-  <input type="product" id="product" name="product" value="" placeholder="Guitar">
-    </div>
-
-    <div>
-  <label for="field-date">From</label>
-  <input type="date" id="date" name="date" value="" placeholder="From">
-
-  <label for="field-date">To</label>
-  <input type="date" id="date" name="date" value="" placeholder="To">
-    </div>
-
-  <div>
-    <button class= "button">Search</button>
   </div>
-
-  </body>
-</html>
+</div>
