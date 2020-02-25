@@ -1,12 +1,19 @@
 // Specific CSS for your home-page
 .title {
   text-align: center;
-
+  margin-bottom: 30px;
 }
 
 .mini {
   text-align: center;
 
+}
+
+.home-background {
+  background-position: center;
+  background-size: cover;
+  padding: 20px 0;
+  min-height: calc(100vh - 54px)
 }
 
 .button {
@@ -77,6 +84,6 @@ h1 {
 }
 
 h3 {
-  font-family: offside, monospace;
+  font-family: 'Offside';
   font-size: 30px;
 }
