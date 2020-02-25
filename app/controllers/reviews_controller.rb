@@ -5,7 +5,7 @@ def new
 end
 
 def edit
-  @reviw = Review.find(params[:id])
+  @review = Review.find(params[:id])
 end
 
 def create
@@ -14,15 +14,14 @@ def create
    redirect_to  review_path(@review)
 end
 
-def private_params
-    params.require(:review).permit(:name, :address, :rating)
- end
-
  def update
   @review = Review.find(params[:id])
   @review.update(private_params)
    redirect_to  review_path(@review)
 end
 
+def private_params
+    params.require(:review).permit(:name, :address, :rating)
+ end
 
 end

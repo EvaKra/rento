@@ -1,0 +1,12 @@
+
+
+<div class= "jumbotron container">
+  <h1>Edit a comment</h1>
+  <%= form_for @review  do |f| %>
+     <%= f.label :description %>
+     <%= f.text_field :description, :class => 'form-control', :rows => '3' %>
+     <%= f.submit "press me", :class => 'btn btn-primary btn-lg' %>
+  <% end %>
+</div>
+
+
