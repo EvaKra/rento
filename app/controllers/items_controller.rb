@@ -13,6 +13,7 @@ class ItemsController < ApplicationController
 
     def create
         @item = Item.new(item_params)
+        @item.user = current_user
         if @item.save
             redirect_to item_path(@item)
         else
@@ -23,8 +24,11 @@ class ItemsController < ApplicationController
     def edit; end
 
     def update
-        @item.update(item_params)
-        redirect_to item_path(@item)
+        if @item.update(item_params)
+            redirect_to item_path(@item)
+        else 
+            render :edit
+        end
     end
 
     def destroy
