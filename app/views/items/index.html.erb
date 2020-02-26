@@ -1,4 +1,4 @@
-<h1>hello</h1>
+<h1>Great news!</h1>
 
 <h4>We found <%= @items.count %> from your search</h4>
 
@@ -7,13 +7,12 @@
     <% @items.each do |item| %>
       <div class="card" style="background-image: url(http://kitt.lewagon.com/placeholder/cities/rio)">
         <%= link_to item.title, item_path(item) %>
+        <%= item.description%><%= item.price%>
       </div>
     <% end %>
   </div>
   <%= image_tag "mapbox.png", id: "map" %>
 </div>
 
-
-
-
 <%= link_to "Back", items_path %>
+

@@ -13,6 +13,7 @@
 @import "pages/index";
 @import "items/index";
 
+css-changes
 // text for home page
 .string.required {
   color:white;
@@ -41,4 +42,9 @@ body {
 
 .string.required {
   color: black;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
 }
