@@ -1,3 +1,12 @@
+<h1>hello</h1>
+
 <% @items.each do |item| %>
-<%= item.title %>
+  <%= link_to item_path(item) do %>
+    <%= item.title %>
+  <% end %>
 <% end %>
+
+<h4>We found <%= @items.count %> from your search</h4>
+
+
+#back
