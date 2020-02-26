@@ -12,7 +12,28 @@
 @import "components/index";
 @import "pages/index";
 
-// .container {
-//   width: 600px;
-//   margin: auto;
-// }
+// text for home page
+.string.required {
+  color:white;
+}
+
+
+.container {
+  padding-top: 80px;
+  width: 600px;
+  margin: auto;
+}
+
+span {
+  float:right
+}
+
+
+span, a {
+  text-decoration: none;
+  color: pink;
+}
+
+body {
+  background-color: ivory;
+}
