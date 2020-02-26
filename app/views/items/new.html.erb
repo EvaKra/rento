@@ -1,5 +1,5 @@
 
-<div class="contain">
+<div class="container">
 <h2>List an item </h2>
 
 
@@ -10,7 +10,10 @@
      <%= f.text_field :description %>
      <%= f.label :price %>
      <%= f.number_field :price %>
-     <%= f.submit %>
+     <%= f.submit%>
+
   <% end %>
 
+<%= link_to "back", root_path %>
 </div>
+
