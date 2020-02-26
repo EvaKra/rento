@@ -9,7 +9,7 @@
     <div class="row">
       <div class="col-6 offset-3">
         <%= simple_form_for :items, url: items_path, method: :get do |f| %>
-          <%= f.input :where, placeholder: 'location' %>
+          <%= f.input :where, placeholder: 'location', input_html: { class: "text" }%>
           <%= f.input :what, placeholder: 'guitar', input_html: { value: "guitar" }  %>
           <div class="d-flex align-items-center justify-content-center">
             <%= f.submit 'Search', class:'button' %>
