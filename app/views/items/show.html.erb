@@ -2,7 +2,7 @@
 
 <p><%= @item.description %></p>
 
-<%= link_to "Rent it", new_item_booking_path(@item)%>
+<%= link_to "Rent it", new_item_booking_path(@item) unless @item.user == current_user %>
 
 <%= link_to "Back", item_path(@item.id) %>
 

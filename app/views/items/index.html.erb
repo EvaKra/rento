@@ -1,12 +1,19 @@
 <h1>hello</h1>
 
-<% @items.each do |item| %>
-  <%= link_to item_path(item) do %>
-    <%= item.title %>
-  <% end %>
-<% end %>
-
 <h4>We found <%= @items.count %> from your search</h4>
+
+<div class="content">
+  <div class="cards">
+    <% @items.each do |item| %>
+      <div class="card" style="background-image: url(http://kitt.lewagon.com/placeholder/cities/rio)">
+        <%= link_to item.title, item_path(item) %>
+      </div>
+    <% end %>
+  </div>
+  <%= image_tag "mapbox.png", id: "map" %>
+</div>
+
+
 
 
 <%= link_to "Back", items_path %>
