@@ -3,6 +3,7 @@ class ItemsController < ApplicationController
 
     def index
         @items = Item.all
+        @items = @items.where("title @@ ?", "%#{params.dig(:items, :what)}%") unless params.dig(:items, :what).nil?
     end
 
     def show; end

@@ -1,3 +1,17 @@
+css-changes
+<h1>hello</h1>
+
+<% @items.each do |item| %>
+  <%= link_to item_path(item) do %>
+    <%= item.title %>
+  <% end %>
+<% end %>
+
+<h4>We found <%= @items.count %> from your search</h4>
+
+
+<%= link_to "Back", items_path %>
+=======
 <h1>We found these items for you:</h1>
 
 <ul>
@@ -5,3 +19,4 @@
 <li><%= link_to item.title, item_path(item) %><%= item.description%><%= item.price%></li>
 <% end %>
 </ul>
+ master
