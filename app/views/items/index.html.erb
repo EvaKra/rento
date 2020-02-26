@@ -1,3 +1,7 @@
+<h1>We found these items for you:</h1>
+
+<ul>
 <% @items.each do |item| %>
-<%= item.title %>
+<li><%= link_to item.title, item_path(item) %><%= item.description%><%= item.price%></li>
 <% end %>
+</ul>
