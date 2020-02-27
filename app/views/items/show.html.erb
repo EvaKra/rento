@@ -37,6 +37,4 @@
 <div class="description-box"><p><%= @item.description %></p></div>
         <%= link_to "Rent it!", new_item_booking_path(@item), class: 'button2' unless @item.user == current_user %>
 </div>
-
-  <%= link_to "Back", items_path %>
 </div>
