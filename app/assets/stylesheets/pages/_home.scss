@@ -113,15 +113,17 @@ h2 {
   justify-content: center;
   background: rgb(79, 77, 77);
   width: 224px;
+  font-size: 24px;
+  font-weight: bold;
 
     &:hover {
     filter: blur(0px);
     opacity: 1;
     transform: scale(0.98);
-    box-shadow: 0 0 10px rgb(76, 175, 80);
+    box-shadow: 0 0 10px lightgray;
+    background-color: #00DFC1;
     text-decoration: none;
     color:white;
-
   }
 }
 
