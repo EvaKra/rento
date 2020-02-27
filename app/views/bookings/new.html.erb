@@ -1,10 +1,21 @@
+<div class="page2">
+<div class="row_new">
+  <div class="col-12">
+    <div class="card card-block d-table-cell align-middle">
+      <div class="d-flex align-items-center justify-content-center">
+      </div>
+    </div>
+  </div>
+</div>
 
-<div class="container">
+<h1 class="title_new">Confirm Booking Dates</h1>
+<div class="container booking-container">
   <%= simple_form_for [@item, @booking] do |f| %>
     <%= f.input :date_from, html5: true, class: 'form-control' %>
     <%= f.input :date_to, html5: true %>
     <%= f.submit %>
+
   <% end %>
 
 </div>
-
+</div>

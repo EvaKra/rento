@@ -180,4 +180,22 @@ h2 {
 
 }
 
+.simple_form.new_booking {
+  background-color: lightgrey;
+  padding: 20px 20px;
+}
 
+.title_new {
+  font-family: Courier, monospace;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+.page2 {
+  background: white;
+}
+
+.booking-container {
+  min-height: calc(100vh - 53px)
+}
