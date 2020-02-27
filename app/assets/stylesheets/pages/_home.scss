@@ -214,5 +214,15 @@ h2 {
 }
 
 .booking-container {
-  min-height: calc(100vh - 53px)
+  min-height: calc(10vh - 53px);
+  background-color: lightgrey;
+  padding: 20px 20px;
+}
+
+.back3 {
+  color: black;
+  background-color: #00DFC1;
+  padding: 20px 20px;
+  margin-left: 1000px;
+  margin-top: 10px;
 }
