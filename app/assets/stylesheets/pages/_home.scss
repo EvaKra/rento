@@ -100,16 +100,14 @@ h3 {
   font-size: 30px;
 }
 
-// h2 {
-//   font-family: Courier, monospace;
-//   font-size: 40px;
-//   letter-spacing: 0px;
-//   margin: 50px 0;
-//   text-align: center;
-//   background-color: #00DFC1;
-//   border: solid;
-// }
 
+h2 {
+  font-family: Courier, monospace;
+  font-size: 40px;
+  letter-spacing: 0px;
+  margin: 50px 0;
+  text-align: center;
+}
 .button2 {
  color: white;
   padding-top: 20px;
@@ -117,11 +115,12 @@ h3 {
   padding-right: 30px;
   padding-left: 30px;
   display: flex;
-  margin: 10px;
+  margin: 30px 0px 30px 30px;
+
   align-items: center;
   justify-content: center;
   background: rgb(79, 77, 77);
-  border-radius: 30px;
+  width: 224px;
 
     &:hover {
     filter: blur(0px);
@@ -189,7 +188,16 @@ h3 {
 
 }
 
+.simple_form.new_booking {
+  background-color: lightgrey;
+  padding: 20px 20px;
+}
 
+.title_new {
+  font-family: Courier, monospace;
+  font-size: 40px;
+  text-align: center;
+}
 
 // bookings page 'your booing has been confirmed' page
 
@@ -199,14 +207,10 @@ h3 {
   top: 0;
 }
 
+.page2 {
+  background: white;
+}
 
-
-
-
-
-
-
-
-
-
-
+.booking-container {
+  min-height: calc(100vh - 53px)
+}
