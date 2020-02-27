@@ -36,7 +36,7 @@
 <div class="row-two">
 <div class="description-box"><p><%= @item.description %></p></div>
   <% if @item.user == current_user %>
-    <%= link_to "Delete item", new_item_booking_path(@item), class: 'btn btn-danger'%>
+    <%= link_to "Delete item", items_path, class: 'btn-delete'%>
   <% else %>
     <%= link_to "Rent it!", new_item_booking_path(@item), class: 'button2'  %>
   <% end %>
