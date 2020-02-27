@@ -23,7 +23,11 @@
   color: white;
   font-weight: bolder;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  background: linear-gradient(#004092, #020202, transparent), url("../img/mountains.jpg") no-repeat center;
 }
+
+
+
 
 #map {
   height: 100vh;

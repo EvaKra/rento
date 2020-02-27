@@ -12,6 +12,7 @@
 @import "components/index";
 @import "pages/index";
 @import "items/index";
+@import "pages/bookings";
 
 css-changes
 // text for home page
@@ -29,9 +30,7 @@ span, a {
   color: pink;
 }
 
-body {
-  background-color: ivory;
-}
+
 
 .string.required {
   color: black;
