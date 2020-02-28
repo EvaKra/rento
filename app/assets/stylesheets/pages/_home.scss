@@ -213,10 +213,13 @@ h2 {
   background: white;
 }
 
+
+
 .booking-container {
   min-height: calc(10vh - 53px);
   background-color: lightgrey;
   padding: 20px 20px;
+  width:700px;
 }
 
 .back3 {
@@ -241,5 +244,7 @@ h2 {
   text-decoration-line: underline;
 }
 
-
+.arrow {
+  margin-right:20px;
+}
 
