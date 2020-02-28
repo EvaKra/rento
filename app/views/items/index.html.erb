@@ -8,8 +8,8 @@
 <div class="content">
   <div class="cards">
     <% @items.each do |item| %>
-    <!-- <div class="card" style="background-image: url(http://kitt.lewagon.com/placeholder/cities/rio)">  -->  
-      <div class="card" style="background-image: url(https://source.unsplash.com/1600x900/?<%= item.title%>)">
+    <% photo_url = item.photos.any? ? item.photos.first.service_url : "https://kitt.lewagon.com/placeholder/cities/random" %>
+      <div class="card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<%= photo_url %>')">
         <%= link_to item.title, item_path(item) %>
         <%#= item.description%><%#= item.price%>
       </div>
