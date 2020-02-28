@@ -11,7 +11,7 @@ User.destroy_all
     Item.create!(
       user: user,
       title: %w[Guitar Bike Gameboy Sofa Bed Book].sample,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora reiciendis libero in iusto nisi omnis ipsam deleniti quod quas alias nostrum, enim tempore beatae incidunt minus. Dolores natus provident omnis?",
+      description: Faker::Quote.famous_last_words,
     )
   end
 end
