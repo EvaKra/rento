@@ -13,9 +13,12 @@
           <%= f.input :where?, placeholder: 'location', input_html: { class: "text" }%>
           <%= f.input :what?, placeholder: 'guitar', input_html: { value: "guitar" }  %>
           <div class="d-flex align-items-center justify-content-center">
-            <%= f.submit 'Search', class:'button' %>
+           <%= f.submit 'Search', class:'button' %>
           </div>
         <% end %>
+        <div class="signup container">
+          <%= link_to "Sign Up", new_user_registration_path %>
+        </div>
       </div>
     </div>
   </div>

@@ -17,3 +17,16 @@ User.destroy_all
 end
 
 
+
+items = [
+  {
+    user: User.all.sample,
+    title: 'idomexeoe',
+    description: 'cieomxe'
+  },
+  {
+  }
+]
+items.each do |item|
+  Item.create! item
+end
